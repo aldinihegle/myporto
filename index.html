@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldini Hegle Backend Developer</title>
+    <meta name="description"
+        content="Portfolio of Aldini Hegle, Backend Developer specializing in scalable APIs, real-time systems, and data pipelines.">
+    <meta name="author" content="Aldini Hegle">
+    <meta property="og:title" content="Aldini Hegle  Backend Developer">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">AH<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Hero -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div>
+                        <h1 class="hero-title">Aldini Hegle <br><em>Backend Developer</em></h1>
+                        <p class="hero-role">
+                            <i data-lucide="map-pin"></i>
+                            Software Company · Indonesia
+                        </p>
+                        <p class="hero-desc">
+                            I build reliable, scalable backend systems from enterprise APIs to complex
+                            real-time monitoring platforms. I enjoy working on problems that require
+                            careful system design and solid engineering.
+                        </p>
+                        <div class="hero-btns">
+                            <a href="#projects" class="btn btn-green" id="hero-projects">
+                                <i data-lucide="folder-open"></i> View Projects
+                            </a>
+                            <a href="https://www.linkedin.com/in/aldini-hegle-8abba3200" target="_blank" rel="noopener"
+                                class="btn btn-outline" id="hero-linkedin">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"
+                                    style="flex-shrink:0">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg> LinkedIn
+                            </a>
+                            <a href="https://github.com/aldinihegle" target="_blank" rel="noopener"
+                                class="btn btn-ghost" id="hero-github">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"
+                                    style="flex-shrink:0">
+                                    <path
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                </svg> GitHub
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-card">
+                        <div class="hc-top">
+                            <div class="hc-dot r"></div>
+                            <div class="hc-dot y"></div>
+                            <div class="hc-dot g"></div>
+                            <span class="hc-title-bar">status.json</span>
+                        </div>
+                        <div class="hc-row"><span class="hc-row-label">role</span><span class="hc-row-val">Backend
+                                Developer</span></div>
+                        <div class="hc-row"><span class="hc-row-label">company</span><span class="hc-row-val">Software
+                                Company</span></div>
+                        <div class="hc-row"><span class="hc-row-label">location</span><span
+                                class="hc-row-val">Indonesia</span></div>
+                        <div class="hc-row"><span class="hc-row-label">education</span><span class="hc-row-val">Software
+                                Engineering</span></div>
+                        <div class="hc-row"><span class="hc-row-label">status</span><span class="hc-row-val ok">● Available for Freelance</span></div>
+                        <div class="hc-tags">
+                            <span class="hc-tag">NestJS</span>
+                            <span class="hc-tag">Python</span>
+                            <span class="hc-tag">Airflow</span>
+                            <span class="hc-tag">Vue.js</span>
+                            <span class="hc-tag">PostgreSQL</span>
+                            <span class="hc-tag">WebSocket</span>
+                            <span class="hc-tag">PostGIS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <div class="stats-strip">
+            <div class="container">
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <div class="stat-num">3</div>
+                        <div class="stat-lbl">Highlighted Projects</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">2+</div>
+                        <div class="stat-lbl">Years Coding</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">6+</div>
+                        <div class="stat-lbl">Tech Stacks</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num">0</div>
+                        <div class="stat-lbl">Critical Pentest Findings</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About -->
+        <section id="about" class="sec">
+            <div class="container">
+                <div class="about-grid">
+                    <div>
+                        <span class="label">About</span>
+                        <h2 class="sec-title">Who I Am</h2>
+                        <p class="about-p">
+                            I'm Aldini, a backend developer finishing my undergraduate degree in Software Engineering,
+                            while working full-time at a software company in Indonesia.
+                        </p>
+                        <p class="about-p">
+                            Most of my time goes into API design, data pipelines, and real-time systems.
+                            I've worked on an enterprise HRMIS full-stack, and currently I'm the backend lead
+                            for a high-complexity network monitoring platform.
+                        </p>
+
+                        <div class="exp-list">
+                            <div class="exp-item">
+                                <div class="exp-dot-col">
+                                    <div class="exp-dot"></div>
+                                    <div class="exp-line"></div>
+                                </div>
+                                <div>
+                                    <div class="exp-role">Backend Developer</div>
+                                    <div class="exp-company">Software Company <span>· Jan 2026 – Present</span></div>
+                                    <ul class="exp-pts">
+                                        <li>Backend for a real-time network tower monitoring system (geospatial, live
+                                            data).</li>
+                                        <li>Airflow DAGs for large-scale data processing pipelines.</li>
+                                        <li>Worked with QA and security teams for Pentest and ITQA validation.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="exp-item">
+                                <div class="exp-dot-col">
+                                    <div class="exp-dot" style="background:var(--text-muted)"></div>
+                                </div>
+                                <div>
+                                    <div class="exp-role">Web Developer (Full-Stack)</div>
+                                    <div class="exp-company">Software Company <span>· Apr 2025 – Dec 2025</span></div>
+                                    <ul class="exp-pts">
+                                        <li>Built the TopUp and Leave management modules in an HRMIS (NestJS + Vue.js).
+                                        </li>
+                                        <li>Database management and direct client communication.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="skills-box">
+                            <h4>Tech Stack</h4>
+                            <div class="sk-group">
+                                <div class="sk-lbl">Backend</div>
+                                <div class="sk-tags">
+                                    <span class="sk-tag">NestJS</span>
+                                    <span class="sk-tag">Python</span>
+                                    <span class="sk-tag">REST API</span>
+                                    <span class="sk-tag">JWT</span>
+                                    <span class="sk-tag">RBAC</span>
+                                </div>
+                            </div>
+                            <div class="sk-group">
+                                <div class="sk-lbl">Frontend</div>
+                                <div class="sk-tags">
+                                    <span class="sk-tag">Vue.js</span>
+                                    <span class="sk-tag">React</span>
+                                    <span class="sk-tag">TypeScript</span>
+                                </div>
+                            </div>
+                            <div class="sk-group">
+                                <div class="sk-lbl">Data &amp; Infra</div>
+                                <div class="sk-tags">
+                                    <span class="sk-tag">Airflow</span>
+                                    <span class="sk-tag">PostgreSQL</span>
+                                    <span class="sk-tag">PostGIS</span>
+                                    <span class="sk-tag">Redis</span>
+                                    <span class="sk-tag">WebSocket</span>
+                                </div>
+                            </div>
+                            <div class="sk-group">
+                                <div class="sk-lbl">ML / AI</div>
+                                <div class="sk-tags">
+                                    <span class="sk-tag">Isolation Forest</span>
+                                    <span class="sk-tag">XGBoost</span>
+                                    <span class="sk-tag">SHAP</span>
+                                    <span class="sk-tag">Flask</span>
+                                </div>
+                            </div>
+                            <div class="sk-group">
+                                <div class="sk-lbl">Tools</div>
+                                <div class="sk-tags">
+                                    <span class="sk-tag">Git</span>
+                                    <span class="sk-tag">Docker</span>
+                                    <span class="sk-tag">Linux</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="sec sec-alt">
+            <div class="container">
+                <span class="label">Projects</span>
+                <h2 class="sec-title">Work I've Done</h2>
+                <p class="sec-sub">Click a card to see the full breakdown architecture, decisions, and results.</p>
+
+                <div class="projects-grid">
+
+                    <!-- Card 1: HRMIS -->
+                    <div class="proj-card green" id="card-hrmis" onclick="toggleDetail('hrmis')" role="button"
+                        tabindex="0" aria-expanded="false">
+                        <span class="proj-badge green">Full-Stack · Company</span>
+                        <div class="proj-title">HRMIS TopUp &amp; Leave Management</div>
+                        <p class="proj-summary">
+                            End-to-end modules for employee credit top-ups and leave requests inside an enterprise HR
+                            platform. I owned both backend and frontend.
+                        </p>
+                        <div class="proj-chips">
+                            <span class="proj-chip">NestJS</span>
+                            <span class="proj-chip">Vue.js</span>
+                            <span class="proj-chip">PostgreSQL</span>
+                            <span class="proj-chip">JWT / RBAC</span>
+                        </div>
+                        <div class="proj-open">
+                            <span id="open-label-hrmis">View details</span>
+                            <i data-lucide="arrow-right" id="proj-icon-hrmis"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Network Monitoring -->
+                    <div class="proj-card amber" id="card-netmon" onclick="toggleDetail('netmon')" role="button"
+                        tabindex="0" aria-expanded="false">
+                        <span class="proj-badge amber">Backend · Company</span>
+                        <div class="proj-title">Network Tower Monitoring Platform</div>
+                        <p class="proj-summary">
+                            Real-time monitoring for hundreds of network towers polygon coverage, revenue analytics,
+                            live markers, and field survey streaming. Full backend, built from scratch.
+                        </p>
+                        <div class="proj-chips">
+                            <span class="proj-chip">Python</span>
+                            <span class="proj-chip">Airflow</span>
+                            <span class="proj-chip">PostGIS</span>
+                            <span class="proj-chip">WebSocket</span>
+                            <span class="proj-chip">Redis</span>
+                        </div>
+                        <div class="proj-open">
+                            <span id="open-label-netmon">View details</span>
+                            <i data-lucide="arrow-right" id="proj-icon-netmon"></i>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Thesis -->
+                    <div class="proj-card purple" id="card-skripsi" onclick="toggleDetail('skripsi')" role="button"
+                        tabindex="0" aria-expanded="false">
+                        <span class="proj-badge purple">Full-Stack · Thesis</span>
+                        <div class="proj-title">HR Anomaly Detection Dashboard</div>
+                        <p class="proj-summary">
+                            Undergraduate thesis: detect employees with abnormal performance profiles using Isolation
+                            Forest, then explain why using SHAP with an interactive dashboard.
+                        </p>
+                        <div class="proj-chips">
+                            <span class="proj-chip">React</span>
+                            <span class="proj-chip">NestJS</span>
+                            <span class="proj-chip">Flask</span>
+                            <span class="proj-chip">Isolation Forest</span>
+                            <span class="proj-chip">SHAP</span>
+                        </div>
+                        <div class="proj-open">
+                            <span id="open-label-skripsi">View details</span>
+                            <i data-lucide="arrow-right" id="proj-icon-skripsi"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Detail Panel: HRMIS -->
+                <div class="detail-panel" id="detail-hrmis">
+                    <div class="dp-header">
+                        <div class="dp-header-left">
+                            <h3>HRMIS TopUp &amp; Leave Management</h3>
+                            <div class="dp-role">Web Developer (Backend + Frontend) · Apr 2025 – Dec 2025 · PT.
+                                Neuronworks Indonesia</div>
+                        </div>
+                        <button class="dp-close" onclick="toggleDetail('hrmis')">
+                            <i data-lucide="x"></i> Close
+                        </button>
+                    </div>
+
+                    <div class="dp-body">
+                        <div class="dp-col">
+                            <p class="dp-section-lbl">Problem</p>
+                            <p class="dp-text">
+                                Leave requests and credit top-ups were handled manually via spreadsheets.
+                                The process was slow, error-prone, and HR had no real-time visibility into
+                                what was pending or approved.
+                            </p>
+
+                            <p class="dp-section-lbl">My Contribution</p>
+                            <ul class="dp-list">
+                                <li>Designed and built the TopUp module backend: create request, admin approval flow,
+                                    balance tracking, and transaction history (NestJS).</li>
+                                <li>Built the Leave module end-to-end: submission, multi-level approval workflow, quota
+                                    tracking, and status visibility for employees.</li>
+                                <li>Developed Vue.js pages for both modules: forms, status dashboards, and admin review
+                                    panels.</li>
+                                <li>Implemented RBAC via NestJS Guards to separate employee, manager, and admin
+                                    permissions cleanly.</li>
+                                <li>Collaborated with QA for ITQA and resolved all security findings from Penetration
+                                    Testing.</li>
+                            </ul>
+
+                            <p class="dp-section-lbl">Solution Approach</p>
+                            <p class="dp-text">
+                                Database-level state machine per request (PENDING → APPROVED / REJECTED).
+                                PostgreSQL transactions for atomic balance updates no race conditions on concurrent
+                                approvals.
+                                Redis session caching to cut down JWT validation overhead.
+                            </p>
+                        </div>
+
+                        <div class="dp-col">
+                            <p class="dp-section-lbl">Architecture</p>
+                            <div class="arch">
+                                <div class="arch-flow">
+                                    <div class="ag">
+                                        <div class="ag-lbl">Frontend Vue.js</div>
+                                        <div class="arch-row">
+                                            <div class="an c">Employee</div>
+                                            <div class="arr">↔</div>
+                                            <div class="an c">Manager</div>
+                                            <div class="arr">↔</div>
+                                            <div class="an c">HR Admin</div>
+                                        </div>
+                                    </div>
+                                    <div class="arch-row" style="justify-content:center">
+                                        <div class="arr">↓ HTTP REST</div>
+                                    </div>
+                                    <div class="arch-row" style="justify-content:center">
+                                        <div class="an g">API Gateway · NestJS</div>
+                                        <div class="an g" style="font-size:0.62rem">JWT + RBAC Guards</div>
+                                    </div>
+                                    <div class="arch-row" style="justify-content:center">
+                                        <div class="arr">↓</div>
+                                    </div>
+                                    <div class="ag">
+                                        <div class="ag-lbl">Business Modules</div>
+                                        <div class="arch-row">
+                                            <div class="an s">TopUp Service</div>
+                                            <div class="arr">|</div>
+                                            <div class="an s">Leave Service</div>
+                                            <div class="arr">|</div>
+                                            <div class="an s">Notif</div>
+                                        </div>
+                                    </div>
+                                    <div class="arch-row" style="justify-content:center">
+                                        <div class="arr">↓ SQL Transactions</div>
+                                    </div>
+                                    <div class="arch-row">
+                                        <div class="an d">PostgreSQL</div>
+                                        <div class="arr">+</div>
+                                        <div class="an r">Redis Cache</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="dp-section-lbl" style="margin-top:1rem">Key Decisions</p>
+                            <ul class="dp-list">
+                                <li>State machine at DB level no inconsistent request status possible.</li>
+                                <li>Atomic transaction on balance updates safe under concurrent requests.</li>
+                                <li>NestJS Role decorators clean, reusable RBAC across all endpoints.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="dp-results">
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">0</div>
+                            <div class="dp-res-lbl">Critical findings at Pentest</div>
+                        </div>
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">3</div>
+                            <div class="dp-res-lbl">Approval levels automated</div>
+                        </div>
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">~80%</div>
+                            <div class="dp-res-lbl">Faster than manual process</div>
+                        </div>
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">2</div>
+                            <div class="dp-res-lbl">Modules owned end-to-end</div>
+                        </div>
+                    </div>
+
+                    <div class="dp-footer">
+                        <span class="dp-note">
+                            <i data-lucide="lock"></i>
+                            Confidential internal company project, source code not public.
+                        </span>
+                        <div class="dp-footer-btns">
+                            <a href="#contact" class="btn btn-sm btn-outline">Ask me about this</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detail Panel: Network Monitoring -->
+                <div class="detail-panel" id="detail-netmon">
+                    <div class="dp-header">
+                        <div class="dp-header-left">
+                            <h3>Network Tower Monitoring Platform</h3>
+                            <div class="dp-role">Backend Developer · Jan 2026 – Present · Software Company</div>
+                        </div>
+                        <button class="dp-close" onclick="toggleDetail('netmon')">
+                            <i data-lucide="x"></i> Close
+                        </button>
+                    </div>
+
+                    <div class="dp-body">
+                        <div class="dp-col">
+                            <p class="dp-section-lbl">Problem</p>
+                            <p class="dp-text">
+                                The client needed a centralized system to monitor hundreds of network towers
+                                simultaneously
+                                geographic coverage polygons, live signal data, month-over-month revenue trends,
+                                marker positions on maps, and real-time field survey submissions.
+                                No off-the-shelf solution could handle the full scope.
+                            </p>
+
+                            <p class="dp-section-lbl">My Contribution (Full Backend)</p>
+                            <ul class="dp-list">
+                                <li>Designed the entire backend architecture from scratch Python microservices + REST
+                                    API.</li>
+                                <li>Polygon System: spatial coverage zones per tower using PostGIS, served as GeoJSON
+                                    endpoints for map rendering.</li>
+                                <li>MoM Revenue Analytics: daily aggregation pipelines built as Airflow DAGs processing
+                                    large billing datasets.</li>
+                                <li>Real-time Monitoring: WebSocket server broadcasting live tower status, signal
+                                    strength, and alerts to all connected dashboards.</li>
+                                <li>Marker System: full CRUD for geographic markers with tower metadata (coordinates,
+                                    type, status).</li>
+                                <li>Survey Streaming: field officers submit data from mobile, backend validates, stores,
+                                    and broadcasts updates within 3 seconds.</li>
+                                <li>Optimized all geospatial queries with PostGIS spatial indexes and Redis polygon
+                                    caching.</li>
+                            </ul>
+                        </div>
+
+                        <div class="dp-col">
+                            <p class="dp-section-lbl">Architecture</p>
+                            <div class="arch">
+                                <div class="arch-flow">
+                                    <div class="ag">
+                                        <div class="ag-lbl">Clients</div>
+                                        <div class="arch-row">
+                                            <div class="an c">Web Dashboard</div>
+                                            <div class="arr">|</div>
+                                            <div class="an c">Mobile Field</div>
+                                            <div class="arr">|</div>
+                                            <div class="an c">Admin</div>
+                                        </div>
+                                    </div>
+                                    <div class="arch-row" style="justify-content:center">
+                                        <div class="arr">↓ REST &nbsp; | &nbsp; ↔ WebSocket</div>
+                                    </div>
+                                    <div class="ag">
+                                        <div class="ag-lbl">API Layer Python</div>
+                                        <div class="arch-row">
+                                            <div class="an s">Tower API</div>
+                                            <div class="arr">|</div>
+                                            <div class="an s">Survey API</div>
+                                            <div class="arr">|</div>
+                                            <div class="an ws">WS Server</div>
+                                        </div>
+                                    </div>
+                                    <div class="arch-row" style="justify-content:center">
+                                        <div class="arr">↓ DAG trigger</div>
+                                    </div>
+                                    <div class="ag">
+                                        <div class="ag-lbl">Airflow Pipelines</div>
+                                        <div class="arch-row">
+                                            <div class="an q">Revenue DAG</div>
+                                            <div class="arr">|</div>
+                                            <div class="an q">Polygon Sync</div>
+                                            <div class="arr">|</div>
+                                            <div class="an q">Alert DAG</div>
+                                        </div>
+                                    </div>
+                                    <div class="arch-row" style="justify-content:center">
+                                        <div class="arr">↓</div>
+                                    </div>
+                                    <div class="arch-row">
+                                        <div class="an d">PostgreSQL + PostGIS</div>
+                                        <div class="arr">+</div>
+                                        <div class="an r">Redis</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="dp-section-lbl" style="margin-top:1rem">Key Decisions</p>
+                            <ul class="dp-list">
+                                <li>PostGIS for native spatial queries no app-level GIS math needed.</li>
+                                <li>Airflow DAGs for MoM aggregation observable, retryable, easy to debug.</li>
+                                <li>WebSocket + Redis pub/sub for horizontal scaling of live streams.</li>
+                                <li>Spatial index + Redis polygon cache map queries under 50ms.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="dp-results">
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">&lt;3s</div>
+                            <div class="dp-res-lbl">Survey broadcast latency</div>
+                        </div>
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">5x</div>
+                            <div class="dp-res-lbl">More concurrent streams handled</div>
+                        </div>
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">40%</div>
+                            <div class="dp-res-lbl">Faster pipeline vs. batch cron</div>
+                        </div>
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">6</div>
+                            <div class="dp-res-lbl">Real-time data types integrated</div>
+                        </div>
+                    </div>
+
+                    <div class="dp-footer">
+                        <span class="dp-note">
+                            <i data-lucide="lock"></i>
+                            Confidential internal company project, source code not public.
+                        </span>
+                        <div class="dp-footer-btns">
+                            <a href="#contact" class="btn btn-sm btn-outline">Ask me about this</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Detail Panel: Thesis -->
+                <div class="detail-panel" id="detail-skripsi">
+                    <div class="dp-header">
+                        <div class="dp-header-left">
+                            <h3>HR Anomaly Detection Dashboard</h3>
+                            <div class="dp-role">Undergraduate Thesis · Universitas Pendidikan Indonesia · 2026</div>
+                        </div>
+                        <button class="dp-close" onclick="toggleDetail('skripsi')">
+                            <i data-lucide="x"></i> Close
+                        </button>
+                    </div>
+
+                    <div class="dp-body">
+                        <div class="dp-col">
+                            <p class="dp-section-lbl">Background</p>
+                            <p class="dp-text">
+                                This thesis addresses a real HR problem: how do you automatically detect employees
+                                with abnormal performance profiles, and more importantly, explain <em>why</em> a
+                                profile is flagged not just return an "anomaly" label with no context?
+                            </p>
+
+                            <p class="dp-section-lbl">What I Built</p>
+                            <ul class="dp-list">
+                                <li>Isolation Forest (unsupervised) as the primary anomaly detection model no labels
+                                    needed.</li>
+                                <li>XGBoost Surrogate Model for interpretability retrained on pseudo-labels from
+                                    Isolation Forest.</li>
+                                <li>TreeSHAP to break down each attribute's contribution per individual employee.</li>
+                                <li>React dashboard with SHAP waterfall charts, scatter plots, and boxplot
+                                    distributions.</li>
+                                <li>Comparative context panel: individual vs. company average across salary, career, and
+                                    wellbeing dimensions.</li>
+                                <li>Real-time prediction form: input new employee data and get an anomaly score
+                                    instantly from the ML engine.</li>
+                            </ul>
+
+                            <p class="dp-section-lbl">Stack</p>
+                            <div class="proj-chips" style="margin:0">
+                                <span class="proj-chip">React + TypeScript</span>
+                                <span class="proj-chip">Tailwind CSS</span>
+                                <span class="proj-chip">NestJS</span>
+                                <span class="proj-chip">Flask (ML Engine)</span>
+                                <span class="proj-chip">Isolation Forest</span>
+                                <span class="proj-chip">XGBoost</span>
+                                <span class="proj-chip">TreeSHAP</span>
+                                <span class="proj-chip">Recharts</span>
+                            </div>
+                        </div>
+
+                        <div class="dp-col">
+                            <p class="dp-section-lbl">Architecture 3-Tier Microservices</p>
+                            <div class="arch">
+                                <div class="arch-flow">
+                                    <div class="ag">
+                                        <div class="ag-lbl">Frontend React + TypeScript</div>
+                                        <div class="arch-row">
+                                            <div class="an c">Overview</div>
+                                            <div class="arr">|</div>
+                                            <div class="an c">SHAP Charts</div>
+                                            <div class="arr">|</div>
+                                            <div class="an c">Prediction</div>
+                                        </div>
+                                    </div>
+                                    <div class="arch-row" style="justify-content:center">
+                                        <div class="arr">↓ REST API</div>
+                                    </div>
+                                    <div class="ag">
+                                        <div class="ag-lbl">Backend NestJS</div>
+                                        <div class="arch-row">
+                                            <div class="an g">Employee API</div>
+                                            <div class="arr">|</div>
+                                            <div class="an g">SHAP Bridge</div>
+                                            <div class="arr">|</div>
+                                            <div class="an g">Filter / Sort</div>
+                                        </div>
+                                    </div>
+                                    <div class="arch-row" style="justify-content:center">
+                                        <div class="arr">↓ HTTP to ML Engine</div>
+                                    </div>
+                                    <div class="ag">
+                                        <div class="ag-lbl">ML Engine Flask (Python)</div>
+                                        <div class="arch-row">
+                                            <div class="an ml">Isolation Forest</div>
+                                            <div class="arr">+</div>
+                                            <div class="an ml">XGBoost + SHAP</div>
+                                        </div>
+                                    </div>
+                                    <div class="arch-row" style="justify-content:center">
+                                        <div class="arr">↓</div>
+                                    </div>
+                                    <div class="arch-row">
+                                        <div class="an d">PostgreSQL</div>
+                                        <div class="arr">+</div>
+                                        <div class="an d">HR Analytics Dataset</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="dp-section-lbl" style="margin-top:1rem">Highlights</p>
+                            <ul class="dp-list">
+                                <li>Local SHAP waterfall chart per employee transparent, explainable to HR
+                                    practitioners.</li>
+                                <li>Career stagnation scatter plot and MCCV model stability visualization.</li>
+                                <li>Global SHAP: aggregate attribute contributions across the full dataset.</li>
+                                <li>Context panel: individual vs. company median on salary, wellbeing, and career
+                                    metrics.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="dp-results">
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">3</div>
+                            <div class="dp-res-lbl">Decoupled services (Frontend, Backend, ML)</div>
+                        </div>
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">6</div>
+                            <div class="dp-res-lbl">Types of analytics visualizations</div>
+                        </div>
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">100%</div>
+                            <div class="dp-res-lbl">Explainable every prediction has a reason</div>
+                        </div>
+                        <div class="dp-res-item">
+                            <div class="dp-res-num">Real-time</div>
+                            <div class="dp-res-lbl">Instant score from ML engine</div>
+                        </div>
+                    </div>
+
+                    <div class="dp-footer">
+                        <span class="dp-note">
+                            <i data-lucide="git-branch"></i>
+                            Academic project source code available on GitHub.
+                        </span>
+                        <div class="dp-footer-btns">
+                            <a href="https://github.com/aldinihegle" target="_blank" rel="noopener"
+                                class="btn btn-sm btn-green" id="skripsi-github">
+                                <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"
+                                    style="flex-shrink:0">
+                                    <path
+                                        d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                                </svg> View on GitHub
+                            </a>
+                            <a href="#contact" class="btn btn-sm btn-outline">Discuss this</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Engineering Focus -->
+        <section id="skills" class="sec">
+            <div class="container">
+                <span class="label">Engineering</span>
+                <h2 class="sec-title">Areas of Focus</h2>
+                <p class="sec-sub">Where I bring depth, experience, and genuine interest.</p>
+                <div class="eng-grid">
+                    <div class="eng-card">
+                        <div class="eng-icon"><i data-lucide="zap"></i></div>
+                        <h4>API Development</h4>
+                        <p>Clean, versioned REST APIs with solid auth patterns (JWT, RBAC) and security hardening.
+                            Familiar with Pentest preparation.</p>
+                    </div>
+                    <div class="eng-card">
+                        <div class="eng-icon"><i data-lucide="database"></i></div>
+                        <h4>Database Engineering</h4>
+                        <p>PostgreSQL query optimization, PostGIS for geospatial data, schema design, and transaction
+                            management for critical workflows.</p>
+                    </div>
+                    <div class="eng-card">
+                        <div class="eng-icon"><i data-lucide="git-branch"></i></div>
+                        <h4>Data Pipelines</h4>
+                        <p>Observable, retryable ETL with Apache Airflow DAGs from raw data ingestion to aggregated
+                            analytics outputs.</p>
+                    </div>
+                    <div class="eng-card">
+                        <div class="eng-icon"><i data-lucide="radio"></i></div>
+                        <h4>Real-time Systems</h4>
+                        <p>WebSocket servers, Redis pub/sub for horizontal scaling, and event-driven architectures for
+                            sub-second latency.</p>
+                    </div>
+                    <div class="eng-card">
+                        <div class="eng-icon"><i data-lucide="map"></i></div>
+                        <h4>Geospatial Data</h4>
+                        <p>PostGIS spatial indexing, GeoJSON API design, and geographic marker systems for network
+                            coverage visualization.</p>
+                    </div>
+                    <div class="eng-card">
+                        <div class="eng-icon"><i data-lucide="cpu"></i></div>
+                        <h4>ML Integration</h4>
+                        <p>Connecting ML models to production systems: Flask inference engines, SHAP for explainability,
+                            bridged to backend APIs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="sec sec-alt">
+            <div class="container">
+                <div class="contact-wrap">
+                    <span class="label">Contact</span>
+                    <h2 class="sec-title">Get In Touch</h2>
+                    <p class="sec-sub">
+                        Open to new opportunities, technical conversations, or just a quick hello.
+                        I'll get back to you as soon as I can.
+                    </p>
+                    <div class="contact-actions">
+                        <a href="mailto:aldinihegle7@gmail.com" class="btn btn-green" id="contact-email">
+                            <i data-lucide="mail"></i> Send Email
+                        </a>
+                        <a href="https://www.linkedin.com/in/aldini-hegle-8abba3200" target="_blank" rel="noopener"
+                            class="btn btn-outline" id="contact-li">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg> LinkedIn
+                        </a>
+                        <a href="https://github.com/aldinihegle" target="_blank" rel="noopener" class="btn btn-ghost"
+                            id="contact-gh">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+                                <path
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                            </svg> GitHub
+                        </a>
+                    </div>
+                    <div class="social-row">
+                        <a href="https://www.linkedin.com/in/aldini-hegle-8abba3200" target="_blank" rel="noopener"
+                            class="soc-link" id="soc-linkedin">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg>
+                            linkedin.com/in/aldini-hegle
+                        </a>
+                        <a href="https://github.com/aldinihegle" target="_blank" rel="noopener" class="soc-link"
+                            id="soc-github">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" style="flex-shrink:0">
+                                <path
+                                    d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.02 10.02 0 0 0 22 12.017C22 6.484 17.522 2 12 2z" />
+                            </svg>
+                            github.com/aldinihegle
+                        </a>
+                        <a href="mailto:aldinihegle7@gmail.com" class="soc-link" id="soc-email">
+                            <i data-lucide="mail"></i>
+                            aldinihegle7@gmail.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                &copy; 2026 Aldini Hegle &middot;
+                <a href="https://www.linkedin.com/in/aldini-hegle-8abba3200" target="_blank" rel="noopener">LinkedIn</a>
+                &middot;
+                <a href="https://github.com/aldinihegle" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script>
+        lucide.createIcons();
+
+        // Navbar scroll shadow
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.style.boxShadow = window.scrollY > 20 ? '0 2px 16px rgba(0,0,0,0.07)' : 'none';
+        });
+
+        // Project expand / collapse
+        let currentOpen = null;
+
+        function toggleDetail(id) {
+            const panel = document.getElementById('detail-' + id);
+            const card = document.getElementById('card-' + id);
+            const label = document.getElementById('open-label-' + id);
+
+            if (currentOpen && currentOpen !== id) {
+                document.getElementById('detail-' + currentOpen).classList.remove('open');
+                document.getElementById('card-' + currentOpen).setAttribute('aria-expanded', 'false');
+                const prevLabel = document.getElementById('open-label-' + currentOpen);
+                if (prevLabel) prevLabel.textContent = 'View details';
+            }
+
+            const isOpen = panel.classList.contains('open');
+            panel.classList.toggle('open');
+            card.setAttribute('aria-expanded', String(!isOpen));
+            if (label) label.textContent = isOpen ? 'View details' : 'Close';
+            currentOpen = isOpen ? null : id;
+
+            if (!isOpen) {
+                setTimeout(() => {
+                    panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                }, 50);
+            }
+        }
+
+        // Keyboard accessibility for cards
+        document.querySelectorAll('.proj-card').forEach(card => {
+            card.addEventListener('keydown', e => {
+                if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); card.click(); }
+            });
+        });
+
+        // Scroll reveal
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.style.opacity = '1';
+                    e.target.style.transform = 'translateY(0)';
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        document.querySelectorAll('.proj-card, .eng-card, .stat-item, .exp-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(18px)';
+            el.style.transition = 'opacity 0.45s ease, transform 0.45s ease';
+            io.observe(el);
+        });
+    </script>
+
+</body>
+
+</html>
