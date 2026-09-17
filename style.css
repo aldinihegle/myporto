@@ -496,9 +496,12 @@ footer a { color: rgba(255,255,255,0.65); }
 footer a:hover { color: #fff; }
 
 /* Responsive */
+
+/* Tablet landscape / small desktop (880px and below) */
 @media (max-width: 880px) {
   .hero-grid { grid-template-columns: 1fr; }
   .hero-card { display: none; }
+  .hero-title { font-size: clamp(2rem, 6vw, 3rem); }
   .about-grid { grid-template-columns: 1fr; }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
   .dp-body { grid-template-columns: 1fr; }
@@ -506,12 +509,81 @@ footer a:hover { color: #fff; }
   .eng-grid { grid-template-columns: repeat(2, 1fr); }
   .stats-row { flex-wrap: wrap; }
   .stat-item { flex: 1 1 45%; border-right: none; border-bottom: 1px solid var(--border); }
+  .dp-header { flex-direction: column; gap: 0.75rem; }
+  .dp-close { align-self: flex-end; }
 }
-@media (max-width: 580px) {
-  .nav-links { display: none; }
+
+/* Tablet portrait / large phones (640px and below) */
+@media (max-width: 640px) {
+  .container { padding: 0 1.25rem; }
   .sec { padding: 52px 0; }
+  .sec-title { font-size: clamp(1.4rem, 6vw, 1.8rem); }
+
+  /* Nav — hide links, show only logo + CTA */
+  .nav-links { display: none; }
+  .nav-inner { padding: 0 1.25rem; }
+
+  /* Hero */
+  .hero-title { font-size: clamp(1.8rem, 8vw, 2.6rem); line-height: 1.2; }
+  .hero-role { font-size: 0.88rem; }
+  .hero-desc { font-size: 0.9rem; }
+  .hero-btns { flex-direction: column; gap: 0.6rem; }
+  .hero-btns .btn { width: 100%; justify-content: center; }
+
+  /* Stats */
+  .stats-row { flex-direction: column; }
+  .stat-item { flex: unset; border-bottom: 1px solid var(--border); border-right: none; padding: 0.75rem; }
+  .stat-item:last-child { border-bottom: none; }
+
+  /* Projects */
   .projects-grid { grid-template-columns: 1fr; }
-  .eng-grid { grid-template-columns: 1fr; }
+  .proj-card { padding: 1.25rem; }
+
+  /* Detail panels */
+  .dp-header { padding: 1.25rem; }
+  .dp-col { padding: 1.25rem; }
   .dp-results { flex-direction: column; }
-  .dp-res-item { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.07); }
+  .dp-res-item { border-right: none; border-bottom: 1px solid rgba(0,0,0,0.07); padding: 0.6rem 0; }
+  .dp-res-item:last-child { border-bottom: none; }
+  .dp-footer { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+  .dp-footer-btns { width: 100%; display: flex; gap: 0.5rem; flex-wrap: wrap; }
+  .dp-footer-btns .btn { flex: 1; justify-content: center; }
+
+  /* Engineering */
+  .eng-grid { grid-template-columns: 1fr; }
+
+  /* Contact */
+  .contact-actions { flex-direction: column; align-items: stretch; }
+  .contact-actions .btn { justify-content: center; }
+  .social-row { flex-direction: column; align-items: stretch; }
+  .soc-link { justify-content: center; }
 }
+
+/* Small phones (390px and below — iPhone SE, Galaxy A-series) */
+@media (max-width: 390px) {
+  .container { padding: 0 1rem; }
+  .sec { padding: 40px 0; }
+  .hero { padding-top: 64px; }
+  .hero-title { font-size: 1.6rem; }
+  .arch { padding: 0.9rem; font-size: 0.62rem; }
+  .an { font-size: 0.6rem; padding: 4px 7px; }
+  .dp-res-num { font-size: 1.3rem; }
+}
+
+/* Foldable phones in unfolded state / narrow split view (~720px) */
+@media (min-width: 641px) and (max-width: 860px) {
+  .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .eng-grid { grid-template-columns: repeat(2, 1fr); }
+  .dp-body { grid-template-columns: 1fr; }
+}
+
+/* Touch: increase tap targets */
+@media (hover: none) and (pointer: coarse) {
+  .btn { min-height: 44px; }
+  .nav-links a { min-height: 44px; display: inline-flex; align-items: center; }
+  .proj-card { cursor: pointer; -webkit-tap-highlight-color: transparent; }
+  .dp-close { min-height: 44px; min-width: 44px; }
+  .soc-link { min-height: 44px; }
+  .sk-tag { padding: 6px 10px; }
+}
+
